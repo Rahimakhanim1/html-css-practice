@@ -41,11 +41,10 @@ body{
     border-radius: 40px;
     backface-visibility: hidden;
     transition-duration: .5s;
-    /* transition-delay: .2s; */
-
 }
-.card-front-inner{
+.card-front-inner,.card-back-inner{
     padding: 30px;
+    color:white;
 }
 .card-front-inner .first-section{
     display: flex;
@@ -72,13 +71,11 @@ body{
 
 .second-section p{
     margin-top:40px;
-    color:white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:15px;
 
 }
-.second-section h2{
-    color:white;
+.second-section h3{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .third-section{
@@ -87,7 +84,6 @@ body{
     align-items: center;
 }
 .third-section  .card-owner{
-    color:white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .third-section .end-date{
@@ -99,11 +95,9 @@ body{
     margin:0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12px;
-    color:white;
 }
 .end-date .date{
     font-size:18px;
-    color:white;
 }
 .card-back{
     width: 100%;
@@ -115,15 +109,53 @@ body{
     transform: rotateY(-180deg);
     backface-visibility: hidden;
     transition-duration: .5s;
-    /* transition-delay: .2s; */
 }
-
+.card-top-information{
+    font-size: 9px;
+    text-align: center;
+    font-weight: 200;
+    margin-bottom:15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card-back-inner .black-section{
+    background-color: black;
+    width:100%;
+    height:50px;
+    left:0;
+    position: absolute;
+}
+.card-back-inner .cvv-section{
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    margin-top:80px;
+}
+.card-back-inner .code-section{
+    background: repeating-linear-gradient(#a736b0,#a736b0 0px,#e29ee7 2px ,#e29ee7 10px);
+    width:280px;
+    height:40px;
+    border-radius: 5px;
+}
+.card-back-inner .cvv-number{
+    width:40px;
+    height:30px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:3px;
+    border-radius: 5px;
+    color: black !important;
+    background-color: rgb(255, 255, 255);
+}
+.card-back-inner .card-footer{
+    margin:15px 15px;
+    line-height: 15px;
+    font-size: 11px;
+}
 .card-container:hover .card-front{
-    transform: rotateY(180deg);
-   
-    
+    transform: rotateY(180deg);   
 }
 .card-container:hover .card-back{
-    transform: rotateY(0deg);
-  
+    transform: rotateY(0deg); 
 }
